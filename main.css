@@ -29,6 +29,7 @@ variables
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 0;
 }
 Body {
   font-family: var(--ff-secondary);
@@ -113,14 +114,15 @@ more global css
 .button:hover {
   background: rgba(218, 201, 201, 0.817);
 }
-/* @media screen and (min-width: 950px) {
+@media screen and (max-width: 800px) {
   .button {
-    padding: 0.5rem 1.5rem;
+    padding: 0.3rem 1.2rem;
+    font-size: 0.75rem;
   }
-} */
+}
 
 /* ==================navbar==================== */
-.fa-laptop-code {
+.fa-gg {
   margin-top: 16px;
   margin-left: 1rem;
   font-size: 2rem;
@@ -192,7 +194,7 @@ more global css
 @media screen and (max-width: 800px) {
   .image {
     height: 40vh;
-    width: 60vw;
+    width: 70vw;
     order: -1;
   }
   .bnr {
@@ -202,6 +204,7 @@ more global css
     justify-content: space-around;
     align-items: center;
     gap: 3rem;
+    text-align: center;
   }
   .banner-heading {
     font-size: 1.6rem;
@@ -214,7 +217,6 @@ more global css
   padding: 2rem;
   position: relative;
   overflow: hidden;
-  /* text-align: center; */
 }
 
 .banner-wave {
@@ -235,8 +237,8 @@ more global css
   justify-content: center;
   align-items: center;
   color: var(--black);
-  padding-bottom: 6rem;
-  padding-top: 4rem;
+  padding: 3rem;
+  overflow: hidden;
 }
 .skills-icons {
   font-size: 2.5rem;
@@ -249,7 +251,7 @@ more global css
 }
 .skills-para {
   font-size: 1rem;
-  width: 17rem;
+  width: 15rem;
   margin: 0 auto;
 }
 /* ==================  end of skills  ==================== */
@@ -262,7 +264,7 @@ more global css
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding-bottom: 4rem;
 }
 
@@ -285,12 +287,13 @@ more global css
 .services-container {
   max-width: 85vw;
   margin: 0 auto;
+  text-align: center;
 }
 .services-items {
-  text-align: center;
   padding: 4rem;
   overflow: hidden;
   position: relative;
+  text-align: center;
 }
 .services-items-black {
   background-color: rgba(0, 0, 0, 0.538);
@@ -306,6 +309,7 @@ more global css
 
 .font-text {
   transition: transform 2s;
+  margin: 0 auto;
 }
 .back-text {
   position: absolute;
@@ -320,9 +324,11 @@ more global css
 
 .services-items:hover .font-text {
   transform: translateY(-200px);
+  text-align: center;
 }
 .services-items:hover .back-text {
   bottom: 0;
+  text-align: center;
 }
 
 @media screen and (min-width: 776px) {
@@ -332,6 +338,12 @@ more global css
   }
   .analytics-last-order {
     order: 1;
+  }
+}
+@media screen and (max-width: 450px) {
+  .services-items:hover .back-text {
+    bottom: 0;
+    transform: translateX(-30px);
   }
 }
 /* ==================  end of skills  ==================== */
@@ -418,6 +430,7 @@ more global css
   padding: 60px;
   padding-bottom: 50px;
   align-items: baseline;
+  overflow: hidden;
 }
 .filler-heading {
   font-size: 35px;
@@ -485,10 +498,17 @@ more global css
     padding: 2rem 21rem;
   }
 }
-.work-fix {
+@media screen and (max-width: 300px) {
+  .work-container {
+    grid-gap: 5px;
+    padding: 1rem;
+    padding-bottom: 4rem;
+  }
+}
+/* .work-fix {
   min-height: 4rem;
   padding: 1rem;
-}
+} */
 /* ================== end of work section ==================== */
 
 /* ================== footer section ==================== */
@@ -500,11 +520,10 @@ more global css
 } */
 
 .footer-container {
-  padding: 3rem;
+  padding: 2.5rem;
   text-align: center;
 }
 .footer-heading {
-  font-size: 0.9rem;
   text-transform: uppercase;
 }
 .footer-sm {
@@ -516,11 +535,11 @@ more global css
   color: var(--yellow);
   cursor: pointer;
 }
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
   .footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-}
+} */
 /* ================== end of footer section ==================== */
