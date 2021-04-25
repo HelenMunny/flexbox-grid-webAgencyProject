@@ -232,7 +232,7 @@ more global css
   background: var(--primary-light);
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   color: var(--black);
   padding: 3rem;
@@ -249,8 +249,7 @@ more global css
 }
 .skills-para {
   font-size: 1rem;
-  width: 15rem;
-  margin: 0 auto;
+  width: 16rem;
 }
 /* ==================  end of skills  ==================== */
 
