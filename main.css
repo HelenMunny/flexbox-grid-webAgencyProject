@@ -151,9 +151,7 @@ more global css
 }
 .nav-bar {
   background: var(--primary-clr);
-  height: 18vh;
-}
-.nav-bar {
+  /* height: 18vh; */
   display: flex;
 }
 #nav-items {
