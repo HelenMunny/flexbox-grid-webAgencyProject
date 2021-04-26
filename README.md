@@ -1,5 +1,6 @@
 # flexbox-grid-webAgencyProject
-## my very first css project (2019)
+
+Project preview: https://helenmunny.github.io/flexbox-grid-webAgencyProject/
 
 >> css grid and flexbox.
 >> html5
